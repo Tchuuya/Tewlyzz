@@ -1,0 +1,92 @@
+body {
+  font-family: "K2D", sans-serif;
+  background: linear-gradient(90deg, #f5d0d0, #ffc4c4);
+  color: #111;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: #f97272;
+  font-size: 20px;
+  padding-left: 30px;
+  color: #ffffff;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border-radius: 20px;
+  border: #f97272 solid;
+  padding: 5px;
+  width: 80%;
+  margin: 10px;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 50px;
+  align-self: center;
+  width: fit-content;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F0EF;
+  border-radius: 20px;
+  padding: 10px;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+footer {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #000000;
+  width: 100%;
+}
+
+footer a {
+  color: #f97272;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+input[type="color"] {
+  width: 80%;
+  border: 2.5px solid #f97272;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% { opacity: 0; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.qrreload {
+  animation: blink 0.5s ease-in-out;
+}

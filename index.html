@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Gen By Tewlyzz.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>QrGen</h1>
+    </div>
+    <div class="box">
+
+        <h2 style="padding-bottom: 20px;">สร้าง Qr Code</h2>
+        <div id="bc"
+            style="background-color: #00BFFF; width: 300px; height: 300px; align-self: center; margin-bottom: 20px; display: flex; justify-content: center; align-items: center; border: 2px black solid;">
+            <div id="qrPreview" style="align-self: center; justify-self: center;"></div>
+        </div>
+
+        <div style="background-color: lightgray; padding: 20px; border-radius: 30px; margin-bottom: 20px;">
+            <div
+                style="background-color: #F2F0EF; border-radius: 20px; padding: 10px; padding-top: 20px; margin: 10px;">
+                <label>กรอก URL</label><br>
+                <input type="text" id="textInput" placeholder="..." /><br><br>
+            </div>
+
+            <div
+                style="background-color: #F2F0EF; border-radius: 20px; padding: 10px; padding-top: 20px; margin: 10px;">
+                <label>เลือกสี</label><br>
+                <input type="color" id="colorInput" value="#FFFF00" /><br><br>
+                <label>เลือกสีพื้นหลัง</label><br>
+                <input type="color" id="backgroundInput" value="#00BFFF" /><br><br>
+            </div>
+            <div class="subBox">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img id="logoPreview"
+                        style="max-width: 200px; max-height: 200px; background-color: white; margin: 10px;">
+                    <button id="removeLogo"
+                        style="background-color: red; border: none; border-radius: 100%; width: 30px; height: 30px; text-align: center; color: white;">X</button>
+                </div>
+                <label>โลโก้</label><br>
+                <input type="file" id="logoInput" accept="image/*" /><br><br>
+            </div>
+        </div>
+
+        <div>
+            <button id="genBT"
+                style="border: none; font-size: 20px; padding: 10px; margin: 20px; color: white; border-radius: 10px; background-color: limegreen;">สร้าง</button>
+            <button id="downloadBT"
+                style="border: none; font-size: 20px; padding: 10px; margin: 20px; color: white; border-radius: 10px; background-color: skyblue;">ดาวน์โหลด</button>
+        </div>
+    </div>
+    <footer>
+        <p>สร้างโดย: ทิวลี่ทวินจัมโบ้</p>
+        <p><a href="mailto:jarupagontongpansa@gmail.com">jarupagontongpansa@gmail.com</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
