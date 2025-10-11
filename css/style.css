@@ -90,28 +90,3 @@ input[type="color"] {
 .qrreload {
   animation: blink 0.5s ease-in-out;
 }
-
-@media screen and (min-width: 768px) and (orientation: landscape) {
-  body {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .box {
-    flex-direction: row; /* เปลี่ยนจากแนวตั้งเป็นแนวนอน */
-    align-items: flex-start;
-    gap: 40px; /* ระยะห่างระหว่างกล่องย่อย */
-    margin-top: 100px;
-  }
-
-  .subBox {
-    flex: 1;
-    max-width: 400px;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-  }
-}
