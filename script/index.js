@@ -8,6 +8,7 @@ const downloadBT = document.getElementById("downloadBT");
 const Preview = document.getElementById("qrPreview");
 const logoPreview = document.getElementById("logoPreview");
 const background = document.getElementById("bc");
+const name = document.getElementById("nameInput");
 
 let logoFile = null;
 let qrCode = null;
@@ -85,7 +86,7 @@ function genQR(text) {
 genBT.addEventListener("click", () => {
   if (textInput.value !== "") {
     const text = textInput.value.trim();
-    generateQR(text);
+    genQR(text);
   } else {
     alert("กรุณาใส่ข้อมูลให้ครบ");
   }
@@ -98,7 +99,7 @@ downloadBT.addEventListener("click", () => {
       backgroundColor: null
     }).then((canvas) => {
       const link = document.createElement("a");
-      link.download = "qr_capture.png";
+      link.download = name || "QrCode";
       link.href = canvas.toDataURL("image/png");
       link.click();
     });
